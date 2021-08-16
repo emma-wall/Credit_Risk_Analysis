@@ -118,3 +118,6 @@ Accuracy Score: 0.9317
 * Given the accuracy score, as well as the high recall for both high and low risk, we can say this is a good model. 
 
 ## Summary
+Looking at the above models, the ensemble models outperformed the over and under sampling ones. All of the models and low precision scores for high risk, but the ensemble	 models have noticeably higher accuracy and recall than the imbalance models. 
+
+From the results, we can see that the Easy Ensemble Classifier is the best model to use. It has the highest accuracy, precision, recall and F1 score. Although it has low precision for high risk cases, for the cases are are indeed high risk and low risk, it is good at identifying them. In this case, it is better to detect some more high risk even if some are not, ie. false positives, that way the lender is not taking more risks and not missing more high risk cases. 
