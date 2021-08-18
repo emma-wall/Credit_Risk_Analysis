@@ -4,7 +4,9 @@
 
 This repo uses supervised machine learning to predict credit risk for loans. It evaluates six different models. 
 
-The target variable is loan status, given over 80 various metrics, we want to be able to predict if an applicant will be low or high risk. Looking at the dataset, there is an imbalance with the number of low and high risk cases: low risk - 68,470, high risk - 347. Since there are so many more low risk cases, this might throw off the models, which is why i tried over and under sampling models. 
+The target variable is loan status, given over 80 various metrics, we want to be able to predict if an applicant will be low or high risk. Looking at the dataset, there is an imbalance with the number of low and high risk cases: low risk - 68,470, high risk - 347. Because of this imbalance, 4 of the 6 models have to do with over and under sampling. 
+
+We are looking for a model that has high sensitivity over high precision. In other words we want people who are high risk, to be likely to be flagged high risk. The trade off is that there might be some false positives, but that is better than missing high risk people and costing the lender money. 
 
 ## Results 
 
